@@ -1,0 +1,395 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f8f8f8;
+	margin: 0;
+	padding: 0;
+}
+
+/* .pet-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+} */
+
+.pet-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 4 cột có chiều rộng bằng nhau */
+	grid-auto-rows: auto; /* Chiều cao tự động */
+	grid-gap: 20px; /* Khoảng cách giữa các ô */
+	justify-content: center; /* Căn giữa theo chiều ngang */
+	padding: 20px;
+}
+
+/* Thay đổi layout thành flexbox khi kích thước màn hình nhỏ hơn */
+@media (max-width: 768px) {
+	.pet-container {
+					display: flex;
+					flex-wrap: wrap;
+	}
+	.containerPet {
+					width: calc(50% - 20px); /* 2 cột trên mỗi hàng */
+	}
+}
+
+
+
+.ImgMyselft {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.containerPet {
+	position: relative; 
+	background-color: rgb(246, 244, 244);
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(10, 249, 133, 0.1);
+	margin: 20px;
+	overflow: hidden;    
+	width: 300px;
+	height: 550px;
+	transition: transform 0.3s;
+}
+
+.containerPet:hover {
+	transform: scale(1.05);
+}
+
+.phanloai {
+display: flex;
+align-items: center;
+margin-top: 10px;
+margin-left: 10px;
+}
+
+.phanloai form {
+display: flex;
+flex-wrap: wrap; /* Allow form elements to wrap if needed */
+}
+
+.phanloai .form-group {
+margin: 0 10px; /* Add spacing between form groups */
+}
+
+.phanloai .form-group label {
+display: block;
+margin-bottom: 5px;
+}
+
+.phanloai select {
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+.phanloai button.BtnFilter {
+background-color: #333;
+color: white;
+padding: 8px 15px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+
+.phanloai button.BtnFilter:hover {
+background-color: #444;
+}
+.footer{
+height: 220px;
+background-color: #333;
+display: flex;
+color: #ccc;
+}
+.footer-child{
+width: 400px;
+position: relative;
+/* border-right: 1px solid #f2f3f5; */
+}
+.footer-first{
+position: absolute;
+margin: 50px 80px;
+
+}
+.slogan{
+position: absolute;
+color: aliceblue;
+width: 500px;
+margin-top: 100px;
+margin-left: 20px;
+
+
+}
+.footer-two{
+width: 400px;
+position: relative;
+/* border-right: 1px solid #f2f3f5; */
+margin-left: 70px;
+}
+
+.phanloai form {
+	display: flex;
+	flex-wrap: wrap; /* Allow form elements to wrap if needed */
+}
+
+.phanloai .form-group {
+	margin: 0 10px; /* Add spacing between form groups */
+}
+
+.phanloai .form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.phanloai select {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.phanloai button.BtnFilter {
+	background-color: #333;
+	color: white;
+	padding: 8px 15px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.phanloai button.BtnFilter:hover {
+	background-color: #444;
+}
+
+
+.pet img.imgPet {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.inforPet {
+	padding: 15px;
+	text-align: center;
+}
+
+.inforPet .Name {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.inforPet .charactis {
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #777;
+}
+
+.detailPet {
+	font-size: 14px;
+	color: #555;
+	margin-top: 5px;
+}
+
+.imgBoss {
+	position: absolute;
+	margin-top: 500px;
+	bottom: 30px;
+	left: 10px;
+}
+
+.imgBoss img.imgB {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+/* Position MoreInfor at the bottom right */
+.MoreInfor {
+	position: absolute;
+	margin-top: 500px;
+	bottom: 10px;
+	right: 10px;
+}
+
+.MoreInfor .WatchPetMore {
+	background-color: darksalmon;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s;
+}
+
+.MoreInfor .WatchPetMore:hover {
+	background-color: #2980b9;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #333;
+	color: white;
+}
+
+header .logo {
+	font-size: 24px;
+}
+
+header .NavBar ul {
+	list-style: none;
+	padding: 0;
+}
+
+header .NavBar ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+header .NavBar ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.ContentSearchHome {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+}
+
+.search-bar .Search {
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.search-bar .BtnSearch {
+	padding: 10px 20px;
+	background-color: darksalmon;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.upload-button .icon {
+	background-color: darksalmon;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.upload-button .icon:hover {
+	background-color: #2980b9;
+}
+
+#timePet {
+	position: absolute;
+	bottom: -7px;
+	left: 10px;
+}
+
+.Page {
+	display: flex; /* Make the container a flexbox */
+	justify-content:center; /* Distribute page numbers evenly */
+	gap: 20px;
+}
+.phanloai {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.phanloai form {
+	display: flex;
+	flex-wrap: wrap; /* Allow form elements to wrap if needed */
+}
+
+.phanloai .form-group {
+	margin: 0 10px; /* Add spacing between form groups */
+}
+
+.phanloai .form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.phanloai select {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.phanloai button.BtnFilter {
+	background-color: #333;
+	color: white;
+	padding: 8px 15px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.phanloai button.BtnFilter:hover {
+	background-color: #444;
+}
+.footer{
+height: 220px;
+background-color: #333;
+display: flex;
+color: #ccc;
+}
+.footer-child{
+width: 400px;
+position: relative;
+/* border-right: 1px solid #f2f3f5; */
+}
+.footer-first{
+position: absolute;
+margin: 50px 80px;
+
+}
+.slogan{
+position: absolute;
+color: aliceblue;
+width: 500px;
+margin-top: 100px;
+margin-left: 20px;
+
+
+}
+.footer-two{
+width: 400px;
+position: relative;
+/* border-right: 1px solid #f2f3f5; */
+margin-left: 70px;
+}
+.page {
+	background-color:brown;
+	margin: 10; /* Remove default margin */
+	padding: 5px 10px; /* Add some padding for aesthetics */
+	display: inline-block; /* Allow text to wrap within space */
+	border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.NumPage {
+	text-decoration: none; /* Remove underline from links */
+	color: inherit; /* Inherit color from parent (adjust if needed) */
+}

@@ -1,0 +1,76 @@
+/* Media Query for mobile devices */
+@media (max-width: 600px) {
+    .HeaderHome, .ContentSearchHome, .pet-container, .Page, .footer {
+        padding: 5px;
+    }
+    .logo {
+        display: none;
+    }
+    .phanloai {
+        display: flex;
+        align-items: left;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .phanloai .form-group {
+        margin: 5px 0; /* Add spacing between form groups */
+    }
+    .phanloai button.BtnFilter {
+        background-color: #333;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+
+    .HeaderHome h1.logo {
+        font-size: 20px;
+    }
+
+    .ContentSearchHome .search-bar-item input, .ContentSearchHome .search-bar-item button, .ContentSearchHome .upload-button .icon, .phanloai .form-group select, .phanloai .BtnFilter {
+        width: 90%;
+    }
+
+    .containerPet {
+        margin-bottom: 10px;
+    }
+
+    .imgPet {
+        border-radius: 5px;
+    }
+
+    .inforPet .Name {
+        font-size: 16px;
+    }
+
+    .inforPet .detailPet, .inforPet .charactis, .inforPet .timePet {
+        font-size: 12px;
+    }
+
+    .imgB {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer .slogan {
+        font-size: 16px;
+    }
+
+    .footer .support, .footer .address {
+        font-size: 12px;
+    }
+
+    .footer .icon-support i {
+        font-size: 20px;
+    }
+
+    .footer .shop {
+        font-size: 16px;
+    }
+
+    .footer .list {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,643 @@
+/* CSS LOGIN */
+.LoGinContainer {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+}
+
+/* CSS for Input Groups */
+.input-group {
+	margin-bottom: 15px;
+}
+
+/* CSS for Labels */
+.TaiKhoan,
+.MatKhau {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+/* CSS for Input Fields */
+.InputAccount,
+.InputPassword {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+/* CSS for Login Button */
+.LoGin {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	background-color: #007bff;
+	color: #fff;
+	cursor: pointer;
+}
+
+.LoGin:hover {
+	background-color: #0056b3;
+}
+/* CSS SIGNUP */
+.BodySignUp {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+}
+
+.SignUp {
+	max-width: 400px;
+	margin: 50px auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.TextRegis {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.Info {
+	display: block;
+	margin-bottom: 5px;
+}
+
+#account,#password,#username,#email {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.enter{
+	width: 100%;
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+ text-decoration: none;
+}
+
+.enter:hover {
+	background-color: #45a049;
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+					width: 80%;
+	}
+}
+/* CSS HOMEWWEB */
+/* Reset some default styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.BodyHome {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+}
+
+.HeaderHome {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.NavBar ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.NavBar ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+.NavBar ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+}
+
+.help-notification {
+	position: relative;
+}
+
+.help-notification .help-button {
+	background-color: #f00;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.help-content {
+	display: none;
+	position: absolute;
+	top: 40px;
+	right: 0;
+	background-color: #fff;
+	padding: 10px;
+	border: 1px solid #ccc;
+	z-index: 999; /* Ensure the help content is on top of other content */
+}
+
+.FooterHome {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+.FooterHome .footer-links ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.FooterHome .footer-links ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+.FooterHome .footer-links ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.social-media a {
+	margin-right: 10px;
+}
+
+.social-media img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.FooterHome .copyright {
+	margin-top: 20px;
+}
+.logo,.LoGinSC{
+	color:#0056b3;
+}
+/* CSS CONTENT HOME */
+.ContentSearchHome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng khi không còn không gian */
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	margin-right: 10px; /* Khoảng cách giữa phần tìm kiếm và nút tải lên */
+}
+
+.search-bar input.Search {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	outline: none;
+}
+
+.search-bar button.BtnSearch {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.search-bar button.BtnSearch:hover {
+	background-color: #0056b3;
+}
+
+.upload-button ,.icon {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #28a745;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.upload-button ,.icon:hover {
+	background-color: #218838;
+}
+
+/* Thiết lập font chữ và màu nền cho body */
+/*CSS  UppLoad */
+.BodyUpload {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #f2f2f2;
+}
+
+
+/* Form nhập thông tin */
+.FormUpload {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+/* Tiêu đề của từng trường thông tin */
+.TitleInfor {
+	display: block;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+/* Input và Textarea */
+.Size {
+	width: calc(100% - 12px);
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+/* Nút Đăng tải */
+.BtnUpload {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.BtnUpload:hover {
+	background-color: #45a049;
+}
+
+/* Ghi chú */
+.note {
+	width: calc(100% - 12px);
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	resize: vertical; /* Cho phép thay đổi kích thước theo chiều dọc */
+}
+
+/* CSS UploadSC */
+/* styles.css */
+
+/* Định dạng phần tử body */
+.BodyUploadSC {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* Định dạng tiêu đề */
+.Celebrate {
+	color: #008000; /* Màu xanh lá cây */
+}
+
+/* Định dạng thông báo */
+.Noti {
+	color: #333; /* Màu đen */
+	font-size: 1.2em;
+}
+
+/* Định dạng các nút */
+.BtnUpload {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #4CAF50; /* Màu xanh lá cây đậm */
+	color: white;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+/* Khi con trỏ di chuột qua nút */
+.BtnUpload:hover {
+	background-color: #45a049; /* Màu xanh lá cây nhạt */
+}
+
+/* Khi con trỏ di chuột qua nút */
+.BtnUpload:active {
+	background-color: #3e8e41; /* Màu xanh lá cây sậm */
+}
+
+/* Định dạng container chứa các phần tử */
+.success-message {
+	text-align: center;
+}
+
+/* css content trong home */
+.ContentMain{
+	display: grid;
+	grid-template-columns: 480px 480px 480px;
+	grid-auto-rows: 480px; /* Chiều cao của mỗi hàng là 480px */
+	grid-gap: 10px;
+	margin-left: 5px;
+	background-color: #fef0d5;
+
+}
+.containerPet{
+	display: flex;
+	border-left: solid #787878 0.5px;
+	border-right: solid #787878 0.5px;
+	border-bottom: solid #787878 0.5px;
+}
+.pet,.imgPet{
+	height: 470px;
+	width: 260px;
+	border-radius: 17%;
+}
+.inforPet{
+
+	display: grid;
+	grid-template-columns: 220px;
+	grid-template-rows: 70px 130px 40px 40px 40px 40px 70px 40px;
+}
+
+.Name{
+	font-size: 26px;
+	font-weight: bold;
+	margin-top: 10px;
+	width: 230px;
+	
+}.charactis{
+	max-width: 220px;
+	font-size: 18px;
+	font-style: italic;
+	margin-top: -20px;
+
+}.detailPet{
+	margin-top: -10px;
+	font-size: 18px;
+}
+.timepet{
+	margin-top: 12px;
+}
+.imgBoss,.imgB{
+
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+
+}
+.imgBoss{
+
+	
+	order: 1;
+}
+.WatchPetMore{
+	margin: 0 auto; 
+
+	text-decoration: none;
+	align-items: center;
+	position: relative;}
+.MySelft, .ImgMyselft{
+	width: 40px;
+	height: 40px;
+border-radius: 100%;
+}
+
+.WatchPetMores{
+	margin-left: 30px;
+	margin-top: 12px;
+}
+.MoreInfor{
+	background-color: #ff642f;
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+	margin-top: 10px;
+
+}
+.BackHome{
+	margin-top: 10px;
+	width: 100px;
+	background-color: #fdbb4b;
+}
+.BtnUpload{
+	width: 100px;
+
+}
+.fa-solid,.fa-upload{
+	cursor: pointer;
+}
+/* CSS Myselft */
+.BodyMySelft {
+	font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+.HeaderMySelft {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px;
+}
+
+.DetailMySelft {
+margin: 0px;
+}
+
+.profile .MyImg {
+max-width: 150px;
+border-radius: 50%;
+margin: 10px auto;
+display: block;
+}
+
+.profile ,.Point,
+.profile ,.NameAcc {
+text-align: center;
+}
+.MyImg{
+	cursor: pointer;
+}
+.products ,.ListInfor {
+list-style: none;
+padding: 0;
+}
+
+.products ,.InforMain {
+border: 1px solid #ccc;
+padding: 10px;
+margin: 10px 0;
+}
+
+.btn-back {
+display: block;
+text-align: center;
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+margin-top: 20px;
+}
+
+.btn-back:hover {
+background-color: #555;
+}
+
+.status {
+color: green; 
+}
+
+.status-not{
+color: red; 
+}
+@media (max-width:768px) {
+.DetailMySelft{
+height: 2200px;
+}
+
+}
+/* CSS */
+.rating {
+text-align: center;
+margin-top: 20px;
+}
+
+.stars {
+font-size: 24px;
+}
+
+.star {
+color: gold;
+}
+
+.avt_pet{
+height: 300px;
+width: 300px;
+}
+/* csss change pass */
+.BodyChangePass {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+.TitleChangePass {
+	text-align: center;
+	color: #333;
+}
+
+.container {
+	width: 300px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.PassWord {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.Complete{
+	width: 50px;
+	padding: 10px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.Complete:hover {
+	background-color: #0056b3;
+}
+/* CSS phân trang */
+.Page{
+	display: flex;
+
+}
+.page{
+	width: 10px;
+	height: 10px;
+	background-color: rgb(146, 109, 39);
+	margin: 10px;
+	cursor: pointer;
+}
+.NumPage{
+	text-decoration: none;
+	border: 1px solid #000;
+}
+/* css cho deletemypet */
+.containerDelete {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.btn-delete {
+	background-color: #FF5733;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.btn-cancel {
+	background-color: #3498db;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+.DeleteSc{
+	margin: 15px;
+	font-weight: bold;
+}
